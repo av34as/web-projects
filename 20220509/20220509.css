@@ -1,0 +1,32 @@
+div {
+    position: relative;
+    width: 202px;  /* or 303px (or 100px * n + n) */
+    font-size: 0;
+}
+
+span {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border: 1px solid #ccc;
+    border-left-width: 0;
+    border-top-width: 0;
+    font-size: 12px;
+}
+
+i {
+    position: absolute;
+    background: #fff;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    width: inherit;
+}
+
+​i:first-child {
+    height: auto;
+    width: 1px;
+    top: 0;
+    left: auto;
+    right: 0;
+}
