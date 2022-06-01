@@ -1,0 +1,57 @@
+@charset "utf-8";
+.container {
+    font-size: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.flex1 {
+    background-color: tomato;
+    width: 4em;
+    height: 4em;
+}
+.flex2 {
+    background-color: cadetblue;
+    width: 6em;
+    height: 7em;
+}
+.flex3 {
+    background-color: darkolivegreen;
+    width: 9em;
+    height: 21em;
+}
+.flex4 {
+    background-color: palevioletred;
+    width: 6em;
+    height: 8em;
+}
+.flex5  {
+    background-color: darkviolet;
+    width: 3em;
+    height: 6em;
+}
+.flex6 {
+    background-color: gray;
+    width: 6em;
+    height: 12em;
+}
+.flex7 {
+    background-color: cornflowerblue;
+    width: 3em;
+    height: 8em;
+}
+.flex8 {
+    background-color: indianred;
+    width: 6em;
+    height: 6em;
+}
+.flex9 {
+    background-color: darkorange;
+    width: 12em;
+    height: 9em; 
+}
+@media (max-width:600px){
+    .container {
+    font-size: 1em;
+    }
+}

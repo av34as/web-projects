@@ -1,0 +1,60 @@
+@charset "utf-8";
+html {
+    font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(15, 3rem);
+    grid-auto-rows: 3rem;
+}
+.obj1 {
+    background-color: blue;
+    color: white;
+    grid-area: 1 / 1 / 8 / 8;
+    border-radius: 100%;
+}
+.obj2 {
+    background-color: white;
+    color: black;
+    grid-area: 2 / 2 / 7 / 7;
+    border-radius: 100%;
+}
+.obj3 {
+    background-color: black;
+    color: white;
+    grid-area: 3 / 3 / 6 / 6;
+    border-radius: 100%;
+}
+.obj4 {
+    background-color: white;
+    color: black;
+    grid-area: 4 / 4 / 5 / 5;
+    border-radius: 100%;
+}
+.obj5 {
+    background-color: red;
+    color: black;
+    grid-area: 2 / 9 / 7 / 14;
+    border-radius: 100%;
+}
+.obj6 {
+    background-color: white;
+    color: black;
+    grid-area: 3 / 10 / 6 / 13;
+    border-radius: 100%;
+}
+.obj7 {
+    background-color: black;
+    color: white;
+    grid-area: 4 / 11;
+    border-radius: 100%;
+}
+@media (max-width:720px){
+    .container {
+    display: grid;
+    grid-template-columns: repeat(15, 1.5rem);
+    grid-auto-rows: 1.5rem;
+}
