@@ -1,0 +1,51 @@
+@charset "UTF-8";
+html {
+	background-color: #444;
+}
+h1{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 3rem;
+	text-align: center;
+	background-color: #333;
+	color: lightslategray;
+	display: block;
+	position: sticky;
+	top: 0;
+}
+div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+p {
+	width: 300px;
+	height: auto;
+	border-style: hidden;
+	border-radius: 64px 0 64px 0;
+	background-color: slategrey;
+	color: lightgray;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 1.5rem;
+	font-style: italic;
+	padding: 1.5rem;
+	margin: 1.5rem;
+}
+
+
+@media (max-width:480px){
+	h1 {
+		font-size: 2rem;
+	}
+	div {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+	p {
+		width: auto;
+		height: auto;
+		font-size: 1.25rem;
+		margin: 1rem;
+		padding: 1rem;
+	}
+}
