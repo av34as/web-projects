@@ -27,7 +27,7 @@ body {
 .home-button-area {
   height: 40vh;
   width: 12.5vw;
-  background-color: #AD2B31;
+  background-color: #ad2b31;
   border: hidden;
   display: flex;
   flex-direction: column;
@@ -48,7 +48,7 @@ body {
 .top-panel {
   height: 40vh;
   width: 70vw;
-  background-color: #AD2B31;
+  background-color: #ad2b31;
   border: hidden;
   display: flex;
   flex-direction: column;
@@ -65,7 +65,7 @@ body {
 .about-button,
 .media-button,
 .cat-button {
-  background-color: rgba(24,24,24,0.85);
+  background-color: rgba(24, 24, 24, 0.5);
   color: #eeeeee;
   padding: 2px;
   margin: 2px;
@@ -76,7 +76,6 @@ body {
   font-size: 1rem;
   border-style: hidden;
   border-radius: 2px;
-  margin: 2px;
 }
 .about-button,
 .home-button {
@@ -103,7 +102,7 @@ body {
 .search-box {
   height: 40vh;
   width: 12.5vw;
-  background-color: #AD2B31;
+  background-color: #ad2b31;
   border: hidden;
   display: flex;
   flex-direction: column;
@@ -112,7 +111,7 @@ body {
 .search-window,
 .select-lang {
   margin: 3px;
-  background-color: rgba(224,224,224,0.85);
+  background-color: rgba(224, 224, 224, 0.85);
 }
 .info-area {
   height: 60vh;
@@ -120,9 +119,10 @@ body {
   background-color: #f0f0f0;
   border: hidden;
   display: flex;
-  flex-wrap: wrap;
+  flex: none;
   flex-direction: column;
-  justify-content: flex-end;
+  overflow: scroll;
+	
 }
 footer {
   width: 100%;
@@ -141,13 +141,12 @@ footer {
     height: auto !important;
   }
   .about-buttons-area {
-    background-color: #AD2B31;
+    background-color: #ad2b31;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
-  .about-button
-  {
+  .about-button {
     flex: 1;
   }
   .home-panel {
