@@ -1,0 +1,120 @@
+@charset "utf-8";
+html {
+	height: 100%;
+	display: block;
+}
+body {
+	width: 80%;
+	min-height: 100%;
+	background-color: darkgray;
+	font-size: 1rem;
+	color: lightgray;
+	display: grid;
+	grid-template-columns: minmax(144px, 0.75fr) minmax(432px, 2fr) minmax(144px, 0.75fr);
+	grid-template-rows: minmax(64px, 20vh) minmax(384px, 75vh) minmax(64px, 10vh);
+	grid-gap: 8px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.home-panel {
+	border: 2px solid black;
+	background-color: salmon;
+	grid-row: 1 / 2;
+}
+.top-panel {
+	border: 2px solid black;
+	background-color: salmon;
+	grid-row: 1 / 2;
+	grid-column: 2 / 3;
+}
+.search-panel {
+	border: 2px solid black;
+	background-color: salmon;
+	grid-row: 1 / 2;
+	grid-column: 3 / 4;
+}
+.left-panel {
+	border: 2px solid black;
+	background-color: salmon;
+	grid-row: 2 / 3;
+}
+.main-panel {
+	border: 2px solid black;
+	background-color: salmon;
+	grid-row: 2 / 3;
+	grid-column: 2 / 3;
+}
+.right-panel {
+	border: 2px solid black;
+	background-color: salmon;
+	grid-row: 2 / 3;
+	grid-column: 3 / 4;
+}
+.footer-panel {
+	border: 2px solid black;
+	background-color: salmon;
+	grid-row: 3 / 4;
+	grid-column: 2 / 3;
+}
+
+@media (max-width:1024px){
+	html {
+		display: block;
+	}
+	body {
+		margin-left: 2em;
+	}
+}
+
+@media (max-width:720px){
+	html {
+		display: block;
+	}
+	body {
+		left: 0;
+		right: 0;
+		display: grid;
+		grid-template-columns: 0.5fr 2fr 0.5fr;
+		grid-template-rows: auto;
+		grid-gap: 4px;
+		align-content: flex-start;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.home-panel {
+		height: 32px;
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+	}
+	.search-panel {
+		height: 32px;
+		grid-column: 2 / 4;
+		grid-row: 1 / 2;
+	}
+	.top-panel {
+		height: 64px;
+		grid-column: 1 / 4;
+		grid-row: 3 / 4;
+		z-index: 1;
+	}
+	.main-panel {
+		height: 600px;
+		grid-column: 1 / 4;
+		grid-row: 4 / 5;
+	}
+	.left-panel {
+		height: 64px;
+		grid-column: 1 / 4;
+		grid-row: 2 / 3;
+	}
+	.right-panel {
+		height: 64px;
+		grid-column: 1 / 4;
+		grid-row: 5 / 6;
+	}
+	.footer-panel {
+		height: 24px;
+		grid-column: 1 / 4;
+		grid-row: 6 / 7;
+	}
+}

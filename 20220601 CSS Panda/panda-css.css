@@ -1,0 +1,217 @@
+@charset "utf-8";
+body {
+	background-color: #333;
+}
+.panda {
+    display: grid;
+    grid-template-columns: repeat(32, 1em);
+    grid-auto-rows: 1em;
+}
+.head {
+    background-color: lightgray;
+    width: 12em;
+    height: 16em;
+    border-radius: 32em 32em 32em 32em;
+	transform: perspective(16em) rotateX(30deg);
+    grid-area: 1 / 17;
+    z-index: +1;
+}
+.body {
+    background-color: black;
+    width: 22em;
+    height: 28em;
+    border-radius: 12em 12em 12em 12em;
+    transform: perspective(32em) rotateX(20deg);
+    grid-area: 12 / 12;
+    z-index: 0;
+}
+.rightEye {
+    background-color: black;
+    width: 7em;
+    height: 3em;
+    border-radius: 8em 8em 6em 6em;
+    transform: perspective(24em) rotateX(45deg) rotateZ(-70deg);
+    grid-area: 10 / 17;
+    z-index: +1;
+}
+.rightPupil {
+    background-color: lightgray;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    grid-area: 12 / 20;
+    z-index: +1;
+}
+.leftEye {
+    background-color: black;
+    width: 7em;
+    height: 3em;
+    border-radius: 8em 8em 6em 6em;
+    transform: perspective(24em) rotateX(45deg) rotateZ(70deg);
+    grid-area: 10 / 22;
+    z-index: +1;
+}
+.leftPupil {
+    background-color: lightgray;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    grid-area: 12 / 25;
+    z-index: +1;
+}
+.rightNose {
+	background-color: black;
+	width: 1.25em;
+	height: 1.5em;
+	border-radius: 8px 16px 8px 16px;
+	transform: rotate(119deg);
+	grid-area: 13 / 23;
+	z-index: +1;
+}
+.leftNose {
+	background-color: black;
+	width: 1.25em;
+	height: 1.5em;
+	border-radius: 16px 8px 16px 8px;
+	transform: rotate(-119deg);
+	grid-area: 13 / 22;
+	z-index: +1;
+}
+.leftEar {
+	background-color: black;
+	width: 4em;
+	height: 4em;
+	border-radius: 32px 32px 16px 16px;
+	transform: perspective(24em) rotateX(30deg) rotateZ(-50deg);
+	grid-area: 4 / 16;
+	z-index: +1;
+}
+.rightEar {
+	background-color: black;
+	width: 4em;
+	height: 4em;
+	border-radius: 32px 32px 16px 16px;
+	transform: perspective(24em) rotateX(30deg) rotateZ(50deg);
+	grid-area: 4 / 26;
+	z-index: +1
+}
+.rightMouth {
+	background-color: black;
+	width: 2em;
+	height: 3em;
+	border-radius: 16px 16px 32px 8px;
+	transform: rotate(70deg);
+	grid-area: 15 / 23;
+	z-index: +1;
+}
+.rightLip {
+	background-color: crimson;
+	width: 1.25em;
+	height: 0.75em;
+	border-radius: 8px;
+	transform: rotate(-15deg);
+	grid-area: 16 / 23;
+	z-index: +1;
+}
+.leftMouth {
+	background-color: black;
+	width: 2em;
+	height: 3em;
+	border-radius: 16px 16px 8px 32px;
+	transform: rotate(-70deg);
+	grid-area: 15 / 21;
+	z-index: +1;
+}
+.leftLip {
+	background-color: crimson;
+	width: 1.25em;
+	height: 0.75em;
+	border-radius: 8px;
+	transform: rotate(15deg);
+	grid-area: 16 / 22;
+	z-index: +1;
+}
+.belly {
+	background-color: lightgray;
+    width: 20em;
+    height: 22em;
+    border-radius: 12em 12em 12em 12em;
+    transform: perspective(32em) rotateX(20deg);
+    grid-area: 18 / 13;
+    z-index: 0;
+}
+.rightHand {
+	background-color: black;
+	width: 7em;
+	height: 8em;
+	border-radius: 4em 4em 2em 2em;
+	transform: perspective(32em) rotateX(35deg) rotateZ(45deg);
+	grid-area: 14 / 29
+}
+.rightPaw {
+	background-color: lightgray;
+	width: 3em;
+	height: 3em;
+	border-radius: 48px 32px 16px 16px;
+	transform: rotate(45deg);
+	grid-area: 16 / 31
+}
+.leftPaw {
+	background-color: lightgray;
+	width: 3em;
+	height: 3em;
+	border-radius: 48px 32px 16px 16px;
+	transform: rotate(-45deg);
+	grid-area: 16 / 12
+}
+.leftHand {
+	background-color: black;
+	width: 7em;
+	height: 8em;
+	border-radius: 4em 4em 2em 2em;
+	transform: perspective(32em) rotateX(35deg) rotateZ(-45deg);
+	grid-area: 14 / 10
+}
+.rightLeg {
+	background-color: black;
+	width: 12em;
+	height: 9em;
+	border-radius: 8em 2em 8em 6em; 
+	grid-area: 34 / 24;
+	transform: rotate(-20deg);
+}
+.rightFoot {
+	background-color: lightgray;
+	width: 4em;
+	height: 4em;
+	grid-area: 38 / 26;
+	border-radius: 32px 16px 16px 32px;
+	transform: rotate(-25deg);
+	z-index: +1;
+}
+.leftLeg {
+	background-color: black;
+	width: 12em;
+	height: 9em;
+	border-radius: 2em 8em 6em 8em; 
+	grid-area: 34 / 10;
+	transform: rotate(20deg);
+}
+.leftFoot {
+	background-color: lightgray;
+	width: 4em;
+	height: 4em;
+	grid-area: 38 / 16;
+	border-radius: 16px 32px 32px 16px;
+	transform: rotate(25deg);
+	z-index: +1;
+}
+.mat {
+	background-color: darkolivegreen;
+	width: 32rem;
+	height: 24rem;
+	z-index: -1;
+	grid-area: 25 / 7;
+	transform: perspective(32rem) rotateX(60deg);
+	border-radius: 50%;
+}

@@ -1,0 +1,61 @@
+@charset "utf-8";
+body {
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+    font-size: 2rem;
+    text-align: center;
+    vertical-align: middle;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.box1 {
+    width: 5rem;
+    height: 5rem;
+    background-color: crimson;
+    border-radius: 50%;
+    line-height: 5rem;
+}
+.box2 {
+    width: 7rem;
+    height: 7rem;
+    background-color: darkolivegreen;
+    border-radius: 50%;
+    line-height: 7rem;
+}
+.box3 {
+    width: 9rem;
+    height: 9rem;
+    background-color: darkslateblue;
+    border-radius: 50%;
+    line-height: 9rem;
+}
+.box4 {
+    width: 11rem;
+    height: 11rem;
+    background-color: darkred;
+    border-radius: 50%;
+    line-height: 11rem;
+}
+.box5 {
+    width: 13rem;
+    height: 13rem;
+    background-color: yellowgreen;
+    border-radius: 50%;
+    line-height: 13rem;
+}
+.box6 {
+    width: 15rem;
+    height: 15rem;
+    background-color: darkmagenta;
+    border-radius: 50%;
+    line-height: 15rem;
+}
+.box7 {
+    width: 17rem;
+    height: 17rem;
+    background-color: darkcyan;
+    border-radius: 50%;
+    line-height: 17rem;
+}
