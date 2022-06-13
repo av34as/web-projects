@@ -65,7 +65,7 @@ body {
 .about-button,
 .media-button,
 .cat-button {
-  background-color: rgba(24, 24, 24, 0.5);
+  background-color: #333;
   color: #eeeeee;
   padding: 2px;
   margin: 2px;
@@ -133,7 +133,7 @@ footer {
   body {
     display: flex;
     flex-direction: column;
-    margin: 0.5rem;
+    margin-top: 0;
   }
   * {
     width: auto !important;
@@ -144,12 +144,13 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    order: -1;
   }
   .about-button {
     flex: 1;
   }
   .home-panel {
-    order: -1;
+    flex-direction: column;
   }
   .home-button {
     margin-top: 30vw;
