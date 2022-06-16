@@ -12,8 +12,11 @@ body {
 }
 
 .home-panel {
-    height: 35vh;
     background-color: #AD2B31;
+}
+
+.home-wrapper {
+    height: 35vh;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -62,9 +65,16 @@ body {
     color: #555;
     border: hidden;
     border-radius: 8px;
-    margin-left: 6px;
-    margin-right: 6px;
+    margin: 8px;
     padding: 6px;
+}
+
+.main-panel {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-bar {
@@ -72,21 +82,13 @@ body {
     display: flex;
     flex-flow: row;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-end;
     background-color: #AD2B31;
     padding: 16px;
     border-radius: 16px;
     margin-top: 16px;
-    margin-left: auto;
-    margin-right: auto;
     position: sticky;
     top: 16px;
-}
-
-.main-panel {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
 }
 
 #search-window {
@@ -119,7 +121,7 @@ body {
 .media-panel {
     width: 95%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 16px;
     margin: 16px;
 }
@@ -151,24 +153,23 @@ footer {
     .home-panel {
         height: auto;
         width: 20vw;
-        align-items: center;
-        justify-content: flex-start;
-        position: sticky;
-        top: 0;
-        bottom: 0;
-        left: 0;
     }
 
-    .home-area {}
+    .home-wrapper {
+        align-items: center;
+        justify-content: flex-start;
+        flex: 1;
+        position: sticky;
+        top: 0;
+    }
 
     .logo-area {
         width: 100%;
         padding-top: 64px;
+        padding-bottom: 64px;
         display: flex;
         flex-flow: column;
         align-items: center;
-        position: sticky;
-        top: 0;
     }
 
     #site-name {
@@ -181,8 +182,6 @@ footer {
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-evenly;
-        position: sticky;
-        top: 320px;
     }
 
     .main-panel {
@@ -193,23 +192,18 @@ footer {
     }
 
     .nav-bar {
-        position: fixed;
-        top: 0;
-        right: 10%;
+        position: sticky;
+        top: 16px;
     }
 
     .media-panel {
         width: 100%;
-        margin-top: 96px;
-        margin-bottom: 64px;
+        margin-bottom: 32px;
     }
 
     footer {
         width: 5vw;
         height: auto;
-        position: sticky;
-        top: 0;
-        right: 0;
         text-align: center;
         writing-mode: vertical-rl;
     }
