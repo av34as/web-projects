@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>playLoop</title>
+    <script type="text/javascript">
+      function playLoop() {
+        var x = parseInt(document.getElementById("amount").value);
+        var y = 0;
+        while (x > 0) {
+          var die1 = Math.floor(Math.random() * 6 + 1);
+          var die2 = Math.floor(Math.random() * 6 + 1);
+          if (die1 + die2 == 7) {
+            x += 4;
+          } else {
+            x--;
+          }
+          y++;
+          x--;
+        }
+
+        document.getElementById("result").innerHTML = y;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <label>Starting Bet:</label>
+      <input id="amount" type="text" />
+      <button onclick="playLoop()">Play</button>
+      <span id="result"></span>
+    </div>
+  </body>
+</html>

@@ -9,12 +9,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 0;
 }
 .header-tab {
-  width: 95vw;
-  background-image: url('img/top-banner.jpg');
+  width: 100vw;
+  /* background-image: url('img/top-banner.jpg'); */
+  background-color: #262c3b;
   border: hidden;
-  border-radius: 8px 8px 0 0;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -48,28 +49,41 @@ body {
 .nav-bar {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   align-items: center;
   background-color: #777;
   border: hidden;
   border-radius: 8px;
-  padding: 16px 64px 16px 64px;
-  margin: 16px;
+  margin: 8px;
+  padding: 8px;
+}
+.search-window,
+.search-button,
+.lang-select {
+  font-size: 1rem;
+  padding: 8px;
+  margin: 8px;
+  border: hidden;
+  border-radius: 8px;
+}
+.search-button {
+  font-size: 1rem;
 }
 .main-tab {
-  display: block;
+  display: flex;
+  flex-direction: column-reverse;
 }
 .media-box {
   width: 93vw;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(11rem, 100%), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(14rem, 100%), 1fr));
   gap: 16px;
   margin: 16px;
 }
 #media {
   background-color: #ccc;
-  height: 25vh;
+  height: 30vh;
   border: hidden;
   border-radius: 8px;
   color: #333;
@@ -83,22 +97,25 @@ body {
   font-style: italic;
   line-height: 1.5rem;
   text-align: justify;
-  margin-bottom: 16px;
+  padding: 16px;
 }
 .footer-tab {
-  width: 95vw;
-  background-image: url('img/top-banner.jpg');
+  width: 100vw;
+  margin-bottom: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  /* background-image: url('img/top-banner.jpg'); */
+  background-color: #262c3b;
   color: #ccc;
   font-size: 1rem;
   font-style: italic;
   line-height: 2rem;
   text-align: center;
   border: hidden;
-  border-radius: 0 0 8px 8px;
 }
 @media (min-width: 720px) {
   .header-tab {
-    align-items: flex-start;
+    align-items: center;
   }
   .nav-bar {
     justify-content: flex-end;

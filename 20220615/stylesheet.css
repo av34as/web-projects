@@ -1,4 +1,5 @@
 html {
+    color-scheme: dark light;
     font-family: sans-serif;
 }
 
@@ -12,7 +13,7 @@ body {
 }
 
 .home-panel {
-    background-color: #AD2B31;
+    background-color: #262c3b;
 }
 
 .home-wrapper {
@@ -40,13 +41,14 @@ body {
     font-size: 2rem;
     font-weight: bolder;
     background-color: white;
-    color: #555;
+    color: #333;
 }
 
 #logo-btn:hover,
 .home-btn:hover,
 .nav-btn:hover {
-    color: crimson;
+    color: #AD2B31;
+    cursor:pointer;
 }
 
 #site-name {
@@ -56,6 +58,7 @@ body {
 
 .home-area {
     display: inline-flex;
+    box-sizing: border-box;
 }
 
 .home-btn {
@@ -79,11 +82,12 @@ body {
 
 .nav-bar {
     width: 320px;
+    box-sizing: border-box;
     display: flex;
     flex-flow: row;
     justify-content: space-around;
     align-items: flex-end;
-    background-color: #AD2B31;
+    background-color: #262c3b;
     padding: 16px;
     border-radius: 16px;
     margin-top: 16px;
@@ -92,6 +96,7 @@ body {
 }
 
 #search-window {
+    font-size: 1.25rem;
     width: 210px;
     height: 2rem;
     border: hidden;
@@ -138,8 +143,8 @@ body {
 
 footer {
     width: 100%;
-    background-color: #AD2B31;
-    color: #eee;
+    background-color: #262c3b;
+    color: #ccc;
     line-height: 1.5rem;
     text-align: center;
     padding: 8px;
@@ -192,8 +197,7 @@ footer {
     }
 
     .nav-bar {
-        position: sticky;
-        top: 16px;
+        box-sizing: content-box;
     }
 
     .media-panel {
@@ -202,9 +206,11 @@ footer {
     }
 
     footer {
+        box-sizing: content-box;
         width: 5vw;
-        height: auto;
         text-align: center;
         writing-mode: vertical-rl;
+        padding-left: 8px;
+        padding-right: 8px;
     }
 }
